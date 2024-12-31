@@ -1,0 +1,266 @@
+<html>
+<head>
+    <title>Payment by DodHosting</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background: url('https://img101.pixhost.to/images/84/546560677_skyzopedia.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            animation: blink 1s infinite;
+        }
+        .header img {
+            vertical-align: middle;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #ff0000;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .qr-code, .dana-payment, .gopay-payment, .ovo-payment, .shopeepay-payment {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 5px;
+            border-radius: 10px;
+            animation: rainbow-border 2s linear infinite;
+        }
+        .button {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @keyframes rainbow-border {
+            0% {
+                border: 5px solid red;
+            }
+            20% {
+                border: 5px solid orange;
+            }
+            40% {
+                border: 5px solid yellow;
+            }
+            60% {
+                border: 5px solid green;
+            }
+            80% {
+                border: 5px solid blue;
+            }
+            100% {
+                border: 5px solid purple;
+            }
+        }
+        @keyframes blink {
+            0% { color: red; }
+            20% { color: orange; }
+            40% { color: yellow; }
+            60% { color: green; }
+            80% { color: blue; }
+            100% { color: purple; }
+        }
+        @keyframes arrow-blink {
+            0% { color: red; }
+            20% { color: orange; }
+            40% { color: yellow; }
+            60% { color: green; }
+            80% { color: blue; }
+            100% { color: purple; }
+        }
+        @keyframes button-blink {
+            0% { background-color: red; }
+            33% { background-color: yellow; }
+            66% { background-color: green; }
+            100% { background-color: red; }
+        }
+        .notification {
+            display: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            border-radius: 5px;
+        }
+        .welcome-notification {
+            display: none;
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            border-radius: 10px;
+            font-size: 24px;
+            width: 80%;
+            text-align: center;
+        }
+        .contact-button-container {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .contact-button {
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: button-blink 1s infinite;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            animation: arrow-blink 1s infinite;
+        }
+        .arrow-left {
+            left: -30px;
+        }
+        .arrow-right {
+            right: -30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+       🌐 PAYMENT BY DOD HOSTING 🌐
+    </div>
+    <div class="section">
+        <div class="section-title">
+            QRIS ALL PAYMENT
+        </div>
+        <div class="qr-code">
+            <img alt="QR Code" height="200" src="https://img101.pixhost.to/images/65/546257997_skyzopedia.jpg" width="200"/>
+        </div>
+        <div>
+            <a class="button" href="https://img101.pixhost.to/images/65/546257638_skyzopedia.jpg">
+                DOWNLOAD QRIS
+            </a>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-title">
+            PAYMENT DANA
+        </div>
+        <div class="dana-payment">
+            <img alt="Dana Payment Logo" height="200" src="https://img101.pixhost.to/images/15/545197648_skyzopedia.jpg" width="200"/>
+        </div>
+        <div>
+            <a class="button" href="dana://" onclick="copyNumber('085754721836')">
+                SALIN NOMOR
+            </a>
+        </div>
+        <div>
+            <a class="button" href="dana://" target="_blank">
+                MASUK KE DANA
+            </a>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-title">
+            GOPAY PAYMENT
+        </div>
+        <div class="gopay-payment">
+            <img alt="Gopay Payment Logo" height="200" src="https://img101.pixhost.to/images/15/545198090_skyzopedia.jpg" width="200"/>
+        </div>
+        <div>
+            <a class="button" href="gopay://" onclick="copyNumber('BLM TERSEDIA BILA PERLU PAKE PAYMENT QRIS AJA ATAU PAYMENT YANG LAIN')">
+                SALIN NOMOR
+            </a>
+        </div>
+        <div>
+            <a class="button" href="gopay://" target="_blank">
+                MASUK KE GOPAY 
+            </a>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-title">
+            OVO PAYMENT
+        </div>
+        <div class="ovo-payment">
+            <img alt="OVO Payment Logo" height="200" src="https://img101.pixhost.to/images/15/545198433_skyzopedia.jpg" width="200"/>
+        </div>
+        <div>
+            <a class="button" href="ovo://" onclick="copyNumber('BELUM TERSEDIA PAYMENT OVO BILA PERLU PAKE PAYMENT QRIS AJA ATAU YNG LAIN')">
+                SALIN NOMOR
+            </a>
+        </div>
+        <div>
+            <a class="button" href="ovo://" target="_blank">
+                MASUK KE OVO
+            </a>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-title">
+            SHOPEEPAY PAYMENT
+        </div>
+        <div class="shopeepay-payment">
+            <img alt="ShopeePay Payment Logo" height="200" src="https://img101.pixhost.to/images/15/545198676_skyzopedia.jpg" width="200"/>
+        </div>
+        <div>
+            <a class="button" href="#" onclick="copyNumber('BLM TERSEDIA BILA PERLU PAKE PAYMENT QRIS AJA ATAU PAYMENT YANG LAIN')">
+                SALIN NOMOR
+            </a>
+        </div>
+        <div>
+            <a class="button" href="shopeepay://" target="_blank">
+                MASUK KE APLIKASI
+            </a>
+        </div>
+    <div class="contact-button-container">
+        <span class="arrow arrow-left">&larr;</span>
+        <a class="contact-button" href="https://wa.me/6285754721836">
+            HUBUNGI OWNER
+        </a>
+        <span class="arrow arrow-right">&rarr;</span>
+    </div>
+    <script>
+        function copyNumber(number) {
+            // Simulate copying number to clipboard
+            navigator.clipboard.writeText(number).then(function() {
+                var notification = document.getElementById("notification");
+                notification.style.display = "block";
+                setTimeout(function() {
+                    notification.style.display = "none";
+                }, 3000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+
+        window.onload = function() {
+            var welcomeNotification = document.getElementById("welcome-notification");
+            welcomeNotification.style.display = "block";
+            setTimeout(function() {
+                welcomeNotification.style.display = "none";
+            }, 7000);
+        }
+    </script>
+</body>
+          </html>
